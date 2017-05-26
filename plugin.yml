@@ -1,0 +1,8 @@
+name: EmeraldBank
+version: 1.0.3
+author: rush93
+main: rush93.emeraldbank.EmeraldBank
+commands:
+    ebank:
+        aliases: [eb]
+        description: Commandes de Emerald Banque

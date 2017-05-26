@@ -1,0 +1,58 @@
+#This is the config file for the Emerald Bank plugin
+
+topTotalPerPage: 10
+autoSaveTime: 1200                                                    #in ticks (1s ~= 20ticks)
+customName: false
+superFreezeNpc: true                                                  # if true can cause lag if too many npc
+#if customName = true
+emeraldName: "&cRush&ecoins"
+
+### Lang ###
+prefix: "&6[&bEmeraldBank&6] "
+gui:
+  items:
+    deposit: "&aDeposit"
+    withdraw: "&eWithdraw"
+    quit: "&cClose"
+    rename: "&aRename Villager"
+    remove: "&4Delete Villager" 
+  inventory:                                                           # !!!!! BEWARE !!!! in 1.8 the invertory name should be less that 32 char !! (chat color took 2char)
+    bank: "&a%p's balance &c%s&e Emeralds"                             #  %p for player name | %s for the balance 
+    withdraw: "&eTake your Emeralds &a%p"                              #  %p for player name
+    deposit: "&ePlace your Emeralds &a%p"                              #  %p for player name
+messages:
+  errors:
+    notAPlayer: "&cYou must be a player to do this."
+    positiveInteger: "&cMust be a positive integer."
+    lessThan: "&cMust be less than %i."                                # %i for the number
+    nameNotAPlayer: "&cThat player is not online."
+    noAccount: "&cThat player doesn't have an account."
+    noPermission: "&cPermission required."
+    notEnoughArgument: "&cCommand error :"
+    reload: "&cError when reload the config, check the console for more information."
+  enterPnjName: "&bPlease enter the villager's name."
+  pnjRenamed: "&aVillager has been renamed."
+  pnjRemoved: "&bVillager has been deleted."
+  notForgetItem: "&cDon't forget your items in the bank!"
+  depositSuccess: "&aYou just placed %d emeralds."                     #  %d for the amount
+  withdrawSuccess: "&aYou just took %d emeralds."                      #  %d for the amount
+  playerBalance: "&a%p &b: &e%s."                                      #  %p for the player name | %s for the balance amount 
+  giveSuccess: "&aYou gave %s emeralds to %p."                         #  %p for the player name | %s for the amount 
+  setSuccess: "&aYou just set the balance of %p to %s emeralds."       #  %p for the player name | %s for the amount 
+  reloadSuccess: "&aThe config reloaded."
+  takeSuccess: "&aYou just took %s emeralds from %p."                  #  %p for the player name | %s for the amount 
+  top:
+    firstLine: "&e~~ &aEmerald Bank Top (&c%c/%t&a)&e ~~"              #  %c for the current page | %t for the total number of page
+    line: "&e%i - &a%p &b( &e%s&b E)"                                  #  %i for the player place | %p for the player name | %s for the player balance
+help:
+  errors:
+    noPermission: "&cYou have permission to do this."
+  addpnj: "adds a banker."
+  balanceTop: "displays the balance top."
+  set: "set the balance of a player."
+  give: "give emeralds to a player. "
+  take: "take emeralds from a player."
+  balance: "displays the balance of a player."
+  reload: "reload the config." 
+  deposit: "open the deposit inventory." 
+  withdraw: "open the withdraw inventory." 
